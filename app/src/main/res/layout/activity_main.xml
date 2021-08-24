@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/circularsolid"
+                android:gravity="center"
+                android:padding="14dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:orientation="vertical"
+                    android:textAlignment="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="269dp"
+                            android:layout_height="wrap_content"
+                            android:alpha="0.8"
+                            android:fontFamily="sans-serif-thin"
+                            android:gravity="center"
+                            android:text="Please select your device"
+                            android:textColor="@color/black"
+                            android:textSize="19sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:background="@drawable/my_gradient_drawable"
+                            android:minHeight="100dp"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginEnd="3dp"
+                                android:padding="3dp"
+                                android:src="@drawable/dumbell" />
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="@string/weightScale"
+                                android:textColor="@color/black"
+                                android:fontFamily="sans-serif-thin"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:background="@drawable/my_gradient_drawable"
+                            android:minHeight="100dp"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginEnd="3dp"
+                                android:padding="3dp"
+                                android:src="@drawable/camera" />
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="@string/cctv_controller"
+                                android:textColor="@color/black"
+                                android:fontFamily="sans-serif-thin"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/teacherll"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:background="@drawable/my_gradient_drawable"
+                            android:minHeight="100dp"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginEnd="3dp"
+                                android:padding="3dp"
+                                android:src="@drawable/watch" />
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="@string/Smart_watch"
+                                android:textColor="@color/black"
+                                android:fontFamily="sans-serif-thin"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:background="@drawable/my_gradient_drawable"
+                            android:minHeight="100dp"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginEnd="3dp"
+                                android:padding="3dp"
+                                android:src="@drawable/lock" />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="@string/smart_lock"
+                                android:textColor="@color/black"
+                                android:fontFamily="sans-serif-thin"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="100dp">
+            </Space>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/caveat"
+                        android:text="@string/coming_soon"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>
